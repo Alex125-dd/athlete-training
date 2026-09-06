@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="ATHLETE — персональные тренировочные программы и спортивные методики."
+    >
+
+    <title>ATHLETE — Тренируйся как профессионал</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header" id="top">
+
+    <div class="container header-inner">
+
+        <a href="#top" class="logo">
+            ATHLETE<span>.</span>
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#builder">Конструктор</a>
+            <a href="#programs">Программы звезд</a>
+            <a href="#quotes">Цитата дня</a>
+            <a href="#contacts">Контакты</a>
+
+        </nav>
+
+        <button
+            class="mobile-menu"
+            id="mobileMenu"
+            aria-label="Открыть меню"
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-badge">
+            <span></span>
+            PERSONAL TRAINING PLATFORM
+        </div>
+
+        <h1>
+            Тренируйся<br>
+            <strong>осознанно.</strong>
+        </h1>
+
+        <p class="hero-text">
+            Персональные тренировочные программы,
+            спортивные методики и опыт профессионалов —
+            в одном месте.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#builder" class="btn btn-primary">
+                Создать программу
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#programs" class="btn btn-secondary">
+                Смотреть программы
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>05</strong>
+                <span>направлений</span>
+            </div>
+
+            <div>
+                <strong>20+</strong>
+                <span>программ</span>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <span>доступ</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUOTES ================= -->
+
+<section class="quotes-section" id="quotes">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">MENTALITY</span>
+
+            <h2>
+                Цитата дня
+            </h2>
+
+        </div>
+
+
+        <div class="quote-carousel">
+
+            <button
+                class="quote-arrow quote-prev"
+                aria-label="Предыдущая цитата"
+            >
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+
+            <div class="quote-content">
+
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                <p id="quoteText">
+                    Дисциплина начинается там,
+                    где заканчивается мотивация.
+                </p>
+
+                <div class="quote-author" id="quoteAuthor">
+                    David Goggins
+                </div>
+
+                <div class="quote-progress">
+
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="quote-arrow quote-next"
+                aria-label="Следующая цитата"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BUILDER ================= -->
+
+<section class="builder-section" id="builder">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">PERSONAL BUILDER</span>
+
+            <h2>
+                Создай свою программу
+            </h2>
+
+            <p>
+                Ответь на несколько вопросов — и получи
+                базовый тренировочный план.
+            </p>
+
+        </div>
+
+
+        <div class="builder">
+
+            <!-- STEP INDICATOR -->
+
+            <div class="steps">
+
+                <div class="step active" data-step="1">
+                    <span>01</span>
+                    <small>Цель</small>
+                </div>
+
+                <div class="step" data-step="2">
+                    <span>02</span>
+                    <small>Уровень</small>
+                </div>
+
+                <div class="step" data-step="3">
+                    <span>03</span>
+                    <small>Оборудование</small>
+                </div>
+
+                <div class="step" data-step="4">
+                    <span>04</span>
+                    <small>График</small>
+                </div>
+
+            </div>
+
+
+            <form id="builderForm">
+
+                <!-- STEP 1 -->
+
+                <div class="builder-step active" data-step="1">
+
+                    <h3>Какая у тебя цель?</h3>
+
+                    <p class="step-description">
+                        Выбери основное направление тренировок.
+                    </p>
+
+                    <div class="option-grid">
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="goal"
+                                value="mass"
+                                checked
+                            >
+
+                            <div>
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <strong>Набор массы</strong>
+                                <span>Сила и мышечное развитие</span>
+                            </div>
+
+                        </label>
+
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="goal"
+                                value="strength"
+                            >
+
+                            <div>
+                                <i class="fa-solid fa-weight-hanging"></i>
+                                <strong>Сила</strong>
+                                <span>Развитие силовых качеств</span>
+                            </div>
+
+                        </label>
+
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="goal"
+                                value="endurance"
+                            >
+
+                            <div>
+                                <i class="fa-solid fa-person-running"></i>
+                                <strong>Выносливость</strong>
+                                <span>Кардио и общая форма</span>
+                            </div>
+
+                        </label>
+
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="goal"
+                                value="fitness"
+                            >
+
+                            <div>
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <strong>Общая форма</strong>
+                                <span>Движение и физическая активность</span>
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary next-btn"
+                    >
+                        Далее
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- STEP 2 -->
+
+                <div class="builder-step" data-step="2">
+
+                    <h3>Твой уровень подготовки?</h3>
+
+                    <p class="step-description">
+                        Это поможет подобрать подходящий объём.
+                    </p>
+
+                    <div class="option-list">
+
+                        <label class="radio-row">
+
+                            <input
+                                type="radio"
+                                name="level"
+                                value="beginner"
+                                checked
+                            >
+
+                            <div>
+                                <strong>Новичок</strong>
+                                <span>Начинаю заниматься</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </label>
+
+
+                        <label class="radio-row">
+
+                            <input
+                                type="radio"
+                                name="level"
+                                value="intermediate"
+                            >
+
+                            <div>
+                                <strong>Средний</strong>
+                                <span>Тренируюсь регулярно</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </label>
+
+
+                        <label class="radio-row">
+
+                            <input
+                                type="radio"
+                                name="level"
+                                value="advanced"
+                            >
+
+                            <div>
+                                <strong>Продвинутый</strong>
+                                <span>Есть значительный опыт</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="builder-actions">
+
+                        <button
+                            type="button"
+                            class="btn btn-ghost prev-btn"
+                        >
+                            Назад
+                        </button>
+
+                        <button
+                            type="button"
+                            class="btn btn-primary next-btn"
+                        >
+                            Далее
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 3 -->
+
+                <div class="builder-step" data-step="3">
+
+                    <h3>Что у тебя есть?</h3>
+
+                    <p class="step-description">
+                        Выбери доступное оборудование.
+                    </p>
+
+                    <div class="option-grid">
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="equipment"
+                                value="gym"
+                                checked
+                            >
+
+                            <div>
+                                <i class="fa-solid fa-building"></i>
+                                <strong>Зал</strong>
+                                <span>Тренажёры и свободные веса</span>
+                            </div>
+
+                        </label>
+
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="equipment"
+                                value="dumbbells"
+                            >
+
+                            <div>
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <strong>Гантели</strong>
+                                <span>Домашние тренировки</span>
+                            </div>
+
+                        </label>
+
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="equipment"
+                                value="bodyweight"
+                            >
+
+                            <div>
+                                <i class="fa-solid fa-person"></i>
+                                <strong>Собственный вес</strong>
+                                <span>Минимум оборудования</span>
+                            </div>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="builder-actions">
+
+                        <button
+                            type="button"
+                            class="btn btn-ghost prev-btn"
+                        >
+                            Назад
+                        </button>
+
+                        <button
+                            type="button"
+                            class="btn btn-primary next-btn"
+                        >
+                            Далее
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 4 -->
+
+                <div class="builder-step" data-step="4">
+
+                    <h3>Сколько дней в неделю?</h3>
+
+                    <p class="step-description">
+                        Выбери количество тренировочных дней.
+                    </p>
+
+                    <div class="days-selector">
+
+                        <label>
+                            <input type="radio" name="days" value="2">
+                            <span>2</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="days" value="3" checked>
+                            <span>3</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="days" value="4">
+                            <span>4</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="days" value="5">
+                            <span>5</span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="builder-actions">
+
+                        <button
+                            type="button"
+                            class="btn btn-ghost prev-btn"
+                        >
+                            Назад
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Создать план
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+
+            <!-- GENERATED PLAN -->
+
+            <div
+                class="generated-plan"
+                id="generatedPlan"
+            >
+
+                <div class="plan-header">
+
+                    <div>
+                        <span class="eyebrow">YOUR PLAN</span>
+                        <h3 id="planTitle">
+                            Персональная программа
+                        </h3>
+                    </div>
+
+                    <button
+                        class="close-plan"
+                        id="closePlan"
+                    >
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="plan-meta"
+                    id="planMeta"
+                ></div>
+
+
+                <div
+                    class="schedule"
+                    id="schedule"
+                ></div>
+
+
+                <div class="safety-note">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <span>
+                        Используй комфортную нагрузку, следи за техникой
+                        и при необходимости консультируйся с тренером.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROGRAMS ================= -->
+
+<section class="programs-section" id="programs">
+
+    <div class="container">
+
+        <div class="section-heading heading-row">
+
+            <div>
+
+                <span class="eyebrow">PRO COLLECTION</span>
+
+                <h2>
+                    Программы звезд
+                </h2>
+
+                <p>
+                    Подборка тренировочных подходов разных спортивных направлений.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FILTERS -->
+
+        <div class="filters">
+
+            <button class="filter active" data-filter="all">
+                Все
+            </button>
+
+            <button class="filter" data-filter="bodybuilding">
+                Бодибилдинг
+            </button>
+
+            <button class="filter" data-filter="crossfit">
+                Кроссфит
+            </button>
+
+            <button class="filter" data-filter="armwrestling">
+                Армрестлинг
+            </button>
+
+            <button class="filter" data-filter="powerlifting">
+                Пауэрлифтинг
+            </button>
+
+            <button class="filter" data-filter="endurance">
+                Выносливость
+            </button>
+
+        </div>
+
+
+        <!-- CARDS -->
+
+        <div class="program-grid">
+
+
+            <!-- CARD 1 -->
+
+            <article
+                class="program-card"
+                data-category="bodybuilding"
+            >
+
+                <div class="program-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=85"
+                        alt="Атлет тренируется с гантелями"
+                        loading="lazy"
+                    >
+
+                    <span class="program-tag">
+                        BODYBUILDING
+                    </span>
+
+                </div>
+
+
+                <div class="program-body">
+
+                    <h3>Arnold-inspired</h3>
+
+                    <p>
+                        Базовый гипертрофический сплит
+                        с акцентом на технику.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            3–4 дня
+                        </span>
+
+                        <button
+                            class="program-open"
+                            data-program="arnold"
+                        >
+                            Открыть
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 2 -->
+
+            <article
+                class="program-card"
+                data-category="crossfit"
+            >
+
+                <div class="program-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=85"
+                        alt="Функциональная тренировка"
+                        loading="lazy"
+                    >
+
+                    <span class="program-tag">
+                        CROSSFIT
+                    </span>
+
+                </div>
+
+
+                <div class="program-body">
+
+                    <h3>Fraser Method</h3>
+
+                    <p>
+                        Функциональная подготовка,
+                        сила и работа на выносливость.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            3 дня
+                        </span>
+
+                        <button
+                            class="program-open"
+                            data-program="fraser"
+                        >
+                            Открыть
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 3 -->
+
+            <article
+                class="program-card"
+                data-category="armwrestling"
+            >
+
+                <div class="program-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=900&q=85"
+                        alt="Силовая тренировка"
+                        loading="lazy"
+                    >
+
+                    <span class="program-tag">
+                        ARM WRESTLING
+                    </span>
+
+                </div>
+
+
+                <div class="program-body">
+
+                    <h3>Arm Power</h3>
+
+                    <p>
+                        Кисть, предплечье, хват и общая
+                        силовая подготовка.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            3 дня
+                        </span>
+
+                        <button
+                            class="program-open"
+                            data-program="arm"
+                        >
+                            Открыть
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 4 -->
+
+            <article
+                class="program-card"
+                data-category="endurance"
+            >
+
+                <div class="program-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=900&q=85"
+                        alt="Беговая тренировка"
+                        loading="lazy"
+                    >
+
+                    <span class="program-tag">
+                        ENDURANCE
+                    </span>
+
+                </div>
+
+
+                <div class="program-body">
+
+                    <h3>Goggins-inspired</h3>
+
+                    <p>
+                        Выносливость, постепенное увеличение
+                        объёма и дисциплина.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            3–5 дней
+                        </span>
+
+                        <button
+                            class="program-open"
+                            data-program="goggins"
+                        >
+                            Открыть
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 5 -->
+
+            <article
+                class="program-card"
+                data-category="powerlifting"
+            >
+
+                <div class="program-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=85"
+                        alt="Силовая тренировка со штангой"
+                        loading="lazy"
+                    >
+
+                    <span class="program-tag">
+                        POWERLIFTING
+                    </span>
+
+                </div>
+
+
+                <div class="program-body">
+
+                    <h3>Strength Base</h3>
+
+                    <p>
+                        Основные движения, контроль техники
+                        и постепенное развитие силы.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            3 дня
+                        </span>
+
+                        <button
+                            class="program-open"
+                            data-program="strength"
+                        >
+                            Открыть
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 6 -->
+
+            <article
+                class="program-card"
+                data-category="bodybuilding"
+            >
+
+                <div class="program-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=900&q=85"
+                        alt="Атлетическая тренировка"
+                        loading="lazy"
+                    >
+
+                    <span class="program-tag">
+                        FITNESS
+                    </span>
+
+                </div>
+
+
+                <div class="program-body">
+
+                    <h3>Athletic Base</h3>
+
+                    <p>
+                        Сбалансированная программа для
+                        общей физической подготовки.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            3 дня
+                        </span>
+
+                        <button
+                            class="program-open"
+                            data-program="athletic"
+                        >
+                            Открыть
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+
+                <span class="eyebrow">
+                    START TODAY
+                </span>
+
+                <h2>
+                    Твоя следующая<br>
+                    тренировка начинается здесь.
+                </h2>
+
+            </div>
+
+            <a
+                href="#builder"
+                class="btn btn-primary"
+            >
+                Создать программу
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer" id="contacts">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a href="#top" class="logo">
+                    ATHLETE<span>.</span>
+                </a>
+
+                <p>
+                    Современный подход к тренировкам,
+                    дисциплине и спортивному развитию.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Навигация</h4>
+
+                <a href="#builder">Конструктор</a>
+                <a href="#programs">Программы</a>
+                <a href="#quotes">Цитата дня</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Контакты</h4>
+
+                <a href="mailto:hello@athlete.example">
+                    hello@athlete.example
+                </a>
+
+                <div class="socials">
+
+                    <a href="#" aria-label="VK">
+                        <i class="fa-brands fa-vk"></i>
+                    </a>
+
+                    <a href="#" aria-label="Telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+
+                    <a href="#" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 ATHLETE. Educational project.
+            </span>
+
+            <span>
+                Made with HTML · CSS · JavaScript
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= MODAL ================= -->
+
+<div
+    class="modal"
+    id="programModal"
+    aria-hidden="true"
+>
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-window">
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            aria-label="Закрыть"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <span
+            class="eyebrow"
+            id="modalCategory"
+        >
+            PROGRAM
+        </span>
+
+        <h2 id="modalTitle">
+            Программа
+        </h2>
+
+        <p
+            class="modal-description"
+            id="modalDescription"
+        ></p>
+
+
+        <div
+            class="modal-workouts"
+            id="modalWorkouts"
+        ></div>
+
+
+        <div class="modal-note">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span>
+                Это демонстрационный тренировочный шаблон.
+                Подбирай нагрузку по своему уровню и качеству техники.
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
